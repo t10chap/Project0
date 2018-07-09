@@ -1,0 +1,214 @@
+html{
+  font-family: 'Roboto Mono', monospace;
+}
+
+h3{
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+#page{
+  display: flex;
+  flex-direction: column;
+}
+
+#headerBox{
+  display flex;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  background-image: url('../Images/greenImg.png');
+}
+
+#headerBox h4{
+  margin-top: 120px;
+  font-size: 12px;
+  margin-bottom: -46px
+}
+
+#headerBox h1{
+  font-size: 60px;
+  letter-spacing: -1px;
+  word-spacing: -8px;
+}
+
+#headerBox h2{
+  font-size: 20px;
+  margin-top: -36px;
+}
+
+#navBar{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 60px;
+  padding-top: 10px;
+  position: fixed;
+}
+
+#navBox{
+  position: fixed;
+  right: 32px;
+}
+
+#navBox{
+  height: 70px;
+  width: 30px;
+}
+
+.navLine{
+  margin-top: 8px;
+  border: 2px solid black;
+}
+
+#shortcutPath{
+  margin-top: 60px;
+}
+
+#shortcutPath a{
+  margin: 0px 20px;
+}
+
+#mainBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.stickyContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+#pinInfo{
+  width: 50%;
+  text-align: right;
+  max-height: 100vh;
+  margin-top: 220px;
+}
+
+
+#pinNav{
+  position: absolute;
+  bottom: -360px;
+  right: 50px;
+  font-size: 14px;
+}
+
+#homeImg{
+  background-image: url('../Images/chip.png'); /* Icon made by Freepik from www.flaticon.com */
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+}
+
+.contentDesign{
+  min-height: 78vh;
+  padding: 80px 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#projects{
+  background-color: grey;
+}
+
+#projectImgs{
+  display: flex;
+  justify-content: space-between;
+}
+
+#filler{
+ background-color: rgba(220, 220, 220, 0.6);
+}
+
+#aboutMe{
+  background-color: grey;
+}
+
+button{
+  margin: 0 auto;
+  width: 18%;
+  margin: 10px auto;
+  background-color: rgba(200, 0, 0, 0.8);
+}
+
+.nav li{
+  margin-top: 8px;
+  list-style-type: none;
+}
+
+#contactMe{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+form input, textarea{
+  border: 2px solid grey;
+  margin-top: 12px;
+  width: 80%;
+}
+
+#submitForm{
+  height: 28px;
+}
+
+.error-message {
+	margin: -8px 0 12px;
+  text-align: left;
+  font-size: .9rem;
+  color: #ED5254;
+  display: none;
+}
+
+.error {
+	border: 2px solid #ED5254;
+}
+
+@media only screen and (max-width: 797px){
+  #shortcutPath{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px){
+    #pinInfo{
+    display: none;
+  }
+
+  .stickyContent{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 463px){
+  h1, h4{
+    display: none;
+  }
+
+  #headerBox h2{
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 364px){
+  #name{
+    display: none;
+    font: white;
+    background-color: red;
+  }
+}
