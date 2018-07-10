@@ -20,15 +20,19 @@
             <a id = "name" href = "#">Tevin's Portfolio</a>
           </div>
 
-          <div id = "navBox">
+          <div id = "navBox" onclick = "openNav()">
             <div class = "navLine"></div>
             <div class = "navLine"></div>
             <div class = "navLine"></div>
           </div>
         </div>
 
-        <div id = "hamburgerNav">
-          <a href = "#"></a>
+        <div id = "hamburgerNav" class = "sideNav">
+          <a href = "javascript:void(0)" id = "shrinkbtn" class = "closebtn" onclick = "closeNav()">&times;</a>
+          <a href = "#projects">Projects</a>
+          <a href = "#testimonials">Testimonials</a>
+          <a href = "#aboutMe">About Me</a>
+          <a href = "#contactMe">Contact Me</a>
         </div>
 
         <h4>I Assist With Building</h4>
@@ -37,13 +41,9 @@
 
         <div id = "shortcutPath">
           <a href = "#projects">Projects</a>
-          <a href = "#filler">Filler</a>
+          <a href = "#testimonials">Testimonials</a>
           <a href = "#aboutMe">About Me</a>
         </div>
-      </div>
-
-      <div class = "rotatingPic">
-        <a href = "#"></a>
       </div>
 
 <!-- Main Content -->
@@ -52,57 +52,77 @@
           <div class = "contentDesign" id = "projects">
             <h3>Projects</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec porttitor arcu vitae est tincidunt, non pretium nunc facilisis. Aenean in enim dolor.
-              Sed mi erat, pretium id dui ac, finibus pharetra est. Sed erat lacus, placerat at interdum ut, consequat id metus.
-              Pellentesque ac orci at nisi mattis pretium. Nunc laoreet, dui et convallis ultrices, ligula metus egestas velit,
-              eu fermentum tortor erat ut enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              In hac habitasse platea dictumst. Ut commodo id felis vitae gravida. Sed molestie sapien id venenatis lobortis.
+              In here are a list of projects that I have completed throughout my web development career. What's quite entertaining
+              about these images, is that you are capable of scrolling through them by either selecting one of the arrows or by
+              selecting the dot indexs below the image.
             </p>
 
-            <div id = "projectImgs">
-              <div id = "ppImg">
-                <div class = "rotatingPic">
-                  <a href = "#">Past Projects</a>
+                <!-- Slideshow container -->
+                  <div class = "slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="./images/flower1.jpg" style = "width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="./images/flower2.jpg" style = "width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="./images/flower3.jpg" style = "width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
                 </div>
-              </div>
 
-              <div id = "cpImg">
-                <div class = "rotatingPic">
-                  <a href = "#">Current Projects</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class = "contentDesign" id = "filler">
-            <h3>Filler Heading</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec porttitor arcu vitae est tincidunt, non pretium nunc facilisis. Aenean in enim dolor.
-              Sed mi erat, pretium id dui ac, finibus pharetra est. Sed erat lacus, placerat at interdum ut, consequat id metus.
-              Pellentesque ac orci at nisi mattis pretium. Nunc laoreet, dui et convallis ultrices, ligula metus egestas velit,
-              eu fermentum tortor erat ut enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              In hac habitasse platea dictumst. Ut commodo id felis vitae gravida. Sed molestie sapien id venenatis lobortis.
+          <div class = "contentDesign" id = "testimonials">
+            <h3>Testimonials</h3>
+            <p class = "activeTestim">
+              "Believe in yourself! Have faith in your abilities!
+              Without a humble but reasonable confidence in your own powers you cannot be successful or happy."
+            </p>
+            <p class = "testim">
+              "The will to win, the desire to succeed, the urge to reach your full potential...
+              these are the keys that will unlock the door to personal excellence."
+            </p>
+            <p class = "testim">
+              "Consult not your fears but your hopes and your dreams. Think not about your frustrations, but about your unfulfilled potential.
+              Concern yourself not with what you tried and failed in, but with what it is still possible for you to do."
             </p>
           </div>
 
           <div class = "contentDesign" id = "aboutMe">
             <h3>About Me</h3>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec porttitor arcu vitae est tincidunt, non pretium nunc facilisis. Aenean in enim dolor.
-            Sed mi erat, pretium id dui ac, finibus pharetra est. Sed erat lacus, placerat at interdum ut, consequat id metus.
-            Pellentesque ac orci at nisi mattis pretium. Nunc laoreet, dui et convallis ultrices, ligula metus egestas velit,
-            eu fermentum tortor erat ut enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            In hac habitasse platea dictumst. Ut commodo id felis vitae gravida. Sed molestie sapien id venenatis lobortis.
+              I am currently a General Assembly Student. I was born and raised in Washington State but currently am residing within California
+              while I attend the WDI (Web Development Immersive) bootcamp. I enjoy playing video games, hanging out with friends, and
+              helping others. Although I run into rough patches a lot, especially when it comes to my studies, I love to understand and
+              learn new things/ talents.
             </p>
-            <button type = "button">Learn More</button>
+            <button id = "learnMore" type = "button">Learn More</button>
           </div>
         </div>
+      </div>
 
-  <!-- Pinned Navigation On Right Side -->
+  <!-- Pinned Navigation On Right Side
       <div id = "pinInfo">
         <div id = "pinHeader">
           <h1>Here's A Quick Scrolling Navigation Bar</h1>
@@ -120,7 +140,7 @@
             </li>
         </div>
       </div>
-    </div>
+    </div> -->
 
 <!-- Contact Me -->
     <div id = "contactMe">
