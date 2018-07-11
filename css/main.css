@@ -23,6 +23,7 @@ a{
   display: flex;
   flex-direction: column;
   transition: margin-right .5s;
+
 }
 
 #headerBox{
@@ -30,12 +31,19 @@ a{
   height: 400px;
   width: 100%;
   text-align: center;
-  background-image: url('../images/headbackground.jpg');
+  background-image: url('../images/headerimg1.jpg');
+  background-size: cover;
+  color: yellow;
 }
 
-#name{
-  color: purple;
+#headerBox a{
+    color: yellow;
 }
+
+
+/* #name{
+  color: purple;
+} */
 
 #headerBox h4{
   margin-top: 120px;
@@ -81,14 +89,14 @@ a{
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgba(140, 255, 140, 1);
+  background-image: url('../images/navbarimg1.jpg');
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
 }
 
 #hamburgerNav a{
-  color: black;
+  color: white;
 }
 
 #shrinkbtn{
@@ -132,10 +140,10 @@ a{
 .stickyContent{
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
 }
 
-/* #pinInfo{
+#pinInfo{
   display: flex;
   width: 50%;
   text-align: right;
@@ -149,7 +157,7 @@ a{
   bottom: -360px;
   right: 50px;
   font-size: 14px;
-} */
+}
 
 #homeImg{
   background-image: url('../images/computer-cpu.png'); /* Icon made by Freepik from www.flaticon.com */
@@ -237,7 +245,46 @@ form input, textarea{
 	border: 2px solid #ED5254;
 }
 
-/* Slideshow container */
+
+/* Waypoint
+.waypointObject {
+  background: #e1e1e1;
+  height: 50px;
+}
+#waypoint {
+    margin: 200px 0;
+}
+.onn {
+  background: firebrick;
+  transition: all 0.5s ease;
+} */
+
+
+/* Timed Carousel  */
+.testimonialBox {
+  margin-top: 50px;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.slideshow {
+  position: relative;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;;
+  color: black;
+  text-align: center;
+  display: none;
+  }
+
+
+
+/* Image Slideshow */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -267,7 +314,7 @@ form input, textarea{
 
 /* Position the "next button" to the right */
 .next {
-  right: 57px;
+  right: 0px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -279,11 +326,8 @@ form input, textarea{
 /* Caption text */
 .text {
   color: black;
+  background-color: white;
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  right: -90px;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
@@ -335,9 +379,20 @@ form input, textarea{
 
 
 /* Media Queries */
+@media only screen and (max-width: 1000px){
+  #shortcutPath{
+    margin-top: 10px;
+  }
+}
+
 @media only screen and (max-width: 797px){
   #shortcutPath{
     display: none;
+  }
+
+  #headerBox h1{
+    font-size: 46px;
+    margin-top: 50px;
   }
 }
 
@@ -367,12 +422,8 @@ form input, textarea{
     margin-top: 200px;
     margin-bottom: 0px;
   }
-}
 
-@media only screen and (max-width: 364px){
   #name{
     display: none;
-    font: white;
-    background-color: red;
   }
 }

@@ -1,15 +1,11 @@
-(Got sick, so here's my Website cut short)
-
-In my website I kept it quite simple and tried to meet the
-standard requirements. I had big plans to add in waypoint effects
-by determining offset heights. I did my research but wanted to
-finish the simple things first.
 
 Technologies Used:
 
 I tried to stay away from JQuery to better my fundamentals without it.
 I was told it was not used so much in the real world because it requires
 a download which ends up taking memory can slow can a website.
+But in the end I inevitably used JQuery to create my timed carousel
+because I looked up a tutorial on how to use it and most included JQuery.
 I used google fonts in order to receive my main font throughout my page.
 And other Technologies I used were just linking my stylesheet and script.
 
@@ -25,16 +21,10 @@ is add in a few animations.
 
 Unsolved Problems:
 
-1. My timed carousel isn't up and running. I tried to figure out the process
-by implementing text into my HTML and assigning them a class to not display.
-Then I'd set just one testimonial a class of active in order to display that
-block of text. I tried to implement a function within my Javascript to create
-a timer and set each value of the timer to my blocks of text. And then overall
-change the active class to the current timer's time. This did not work out.
+1. My form page is a little off. The errors aren't displaying and I have an
+error within the DOM that says my e.preventDefault isn't defined.
 
-2. I did not get my "contact me" form to output to a document like I wanted.
-
-3. The UI is just sloppy, it's not really appealing.
+2. The UI is a little sloppy, since I couldn't get the waypoint to work exactly.
 
 Biggest Wins and Challenges:
 
